@@ -67,6 +67,7 @@ function isUserTestRequest(req) {
 }
 
 app.use((req, res, next) => {
+  console.log('Request:', req.url);
   if (!isUserTestRequest(req)) {
     return proxy(req, res, next).catch((err) => {
       console.error('Fehler bei der Weiterleitung:', err);
@@ -75,6 +76,10 @@ app.use((req, res, next) => {
   } else {
     next();
   }
+});
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
 //Mitglied 1
@@ -714,6 +719,7 @@ app.get(
 // sessionStartup
 app.post(path + 'auth/manual/sessionStartup', async (req, res) => {
   if (req.body.username === 'test' && req.body.password === 'test') {
+    console.log('Test user logged in');
     res.cookie('JSESSIONID', 'testApiSessionToken.srv-nami06', {
       maxAge: 9000,
       httpOnly: true
@@ -729,7 +735,9 @@ app.post(path + 'auth/manual/sessionStartup', async (req, res) => {
       minorNumber: 2,
       majorNumber: 1
     });
+    console.log('Test user logged in - end');
   } else {
+    console.log('Real user logged in');
     // Define the URL and other data
     const url = `https://nami.dpsg.de/ica/rest/api/1/1/service/nami/auth/manual/sessionStartup`;
     const params = new URLSearchParams();
@@ -754,6 +762,7 @@ app.post(path + 'auth/manual/sessionStartup', async (req, res) => {
       httpOnly: true
     });
     res.send(await response.text());
+    console.log('Real user logged in - end');
   }
 });
 
