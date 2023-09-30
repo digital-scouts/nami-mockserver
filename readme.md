@@ -1,6 +1,6 @@
 # Mockserver für Nami
 
-Access the mockserver at <http://localhost:3000> with the sessionStartup endpoint and use 'test' as password and 1234 as username.
+Access the mockserver at <http://localhost:3000> with the sessionStartup endpoint and use 'test' as password and "1234" as username.
 
 The mockserver will return a session token. Use this token in the header of all other requests.
 
@@ -21,7 +21,7 @@ Body (x-www-form-urlencoded):
 ``` json
 {
   "Login": "API",
-  "username": 1234,
+  "username": "1234",
   "password": "test"
 }
 ```
