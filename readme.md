@@ -1,6 +1,6 @@
 # Mockserver für Nami
 
-Access the mockserver at http://localhost:3000 with the sessionStartup endpoint and use 'test' as password and username.
+Access the mockserver at <http://localhost:3000> with the sessionStartup endpoint and use 'test' as password and 1234 as username.
 
 The mockserver will return a session token. Use this token in the header of all other requests.
 
@@ -8,7 +8,7 @@ When accessing the mockserver with different credentials, the request will be fo
 
 ## Demo
 
-A demo is available at http://vps-zap443284-1.zap-srv.com:3000/
+A demo is available at <http://vps-zap443284-1.zap-srv.com:3000/>
 
 ## Requests
 
@@ -21,7 +21,7 @@ Body (x-www-form-urlencoded):
 ``` json
 {
   "Login": "API",
-  "username": "test",
+  "username": 1234,
   "password": "test"
 }
 ```

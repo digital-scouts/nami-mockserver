@@ -718,7 +718,7 @@ app.get(
 
 // sessionStartup
 app.post(path + 'auth/manual/sessionStartup', async (req, res) => {
-  if (req.body.username === 'test' && req.body.password === 'test') {
+  if (req.body.username === 1234 && req.body.password === 'test') {
     console.log('Test user logged in');
     res.cookie('JSESSIONID', 'testApiSessionToken.srv-nami06', {
       maxAge: 9000,
