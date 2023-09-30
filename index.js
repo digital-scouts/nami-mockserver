@@ -4,6 +4,7 @@ const { urlencoded, json } = pkg;
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import morgan from 'morgan';
 import fetch from 'node-fetch';
+import memberData from './memberData.json' assert { type: 'json' };
 
 function extractJSessionID(cookieString) {
   // Definiere den regulären Ausdruck, um den Wert von JSESSIONID zu extrahieren
@@ -82,119 +83,117 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-//Mitglied 1
-app.get(
-  path + 'mitglied/filtered-for-navigation/gruppierung/gruppierung/*/1',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: {
-        geschlecht: 'männlich',
-        emailVertretungsberechtigter: 'liam.papa@smith.de',
-        lastUpdated: '2022-11-14 10:02:39',
-        id: 1,
-        version: 34,
-        landId: 1,
-        mglTypeId: 'MITGLIED',
-        nachname: 'Smith',
-        eintrittsdatum: '2016-11-18 00:00:00',
-        status: 'Aktiv',
-        telefon3: '',
-        email: 'liam@smith.de',
-        telefon1: '040 123 456',
-        telefon2: 'Papa: 0171 321 321 / Mama: 01578 123 123',
-        strasse: 'Musterweg 1',
-        vorname: 'Liam',
-        mitgliedsNummer: 1,
-        austrittsDatum: '',
-        ort: 'Hamburg',
-        geburtsDatum: '2009-02-16 00:00:00',
-        stufe: 'Pfadfinder',
-        beitragsartId: 4,
-        plz: '22523'
-      },
-      responseType: null,
-      message: null,
-      title: null
-    });
-  }
-);
+// Member data
+memberData.forEach((member) => {
+  app.get(
+    path +
+      'mitglied/filtered-for-navigation/gruppierung/gruppierung/*/' +
+      member.member.id,
+    (req, res) => {
+      res.send({
+        success: true,
+        data: member.member,
+        responseType: null,
+        message: null,
+        title: null
+      });
+    }
+  );
 
-//Mitglied 2
-app.get(
-  path + 'mitglied/filtered-for-navigation/gruppierung/gruppierung/*/2',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: {
-        geschlecht: 'weiblich',
-        emailVertretungsberechtigter: 'emma.mama@johnson.de',
-        lastUpdated: '2022-10-25 09:45:21',
-        id: 2,
-        version: 29,
-        landId: 1,
-        mglTypeId: 'MITGLIED',
-        nachname: 'Johnson',
-        eintrittsdatum: '2018-07-22 00:00:00',
-        status: 'Aktiv',
-        telefon3: '',
-        email: 'emma@johnson.de',
-        telefon1: '030 987 654',
-        telefon2: 'Mama: 0162 987 987 / Papa: 0176 543 543',
-        strasse: 'Musterstraße 2',
-        vorname: 'Emma',
-        mitgliedsNummer: 2,
-        austrittsDatum: '',
-        ort: 'Berlin',
-        geburtsDatum: '2010-05-03 00:00:00',
-        stufe: 'Pfadfinder',
-        beitragsartId: 4,
-        plz: '10115'
-      },
-      responseType: null,
-      message: null,
-      title: null
-    });
-  }
-);
-
-//Mitglied 3
-app.get(
-  path + 'mitglied/filtered-for-navigation/gruppierung/gruppierung/*/3',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: {
-        geschlecht: 'männlich',
-        emailVertretungsberechtigter: 'noah.papa@davis.de',
-        lastUpdated: '2022-09-30 14:20:17',
-        id: 3,
-        version: 31,
-        landId: 1,
-        mglTypeId: 'MITGLIED',
-        nachname: 'Davis',
-        eintrittsdatum: '2017-03-10 00:00:00',
-        status: 'Aktiv',
-        telefon3: '',
-        email: 'noah@davis.de',
-        telefon1: '0170 789 123',
-        telefon2: '0159 987 789',
-        strasse: 'Musterweg 3',
-        vorname: 'Noah',
-        mitgliedsNummer: 3,
-        austrittsDatum: '',
-        ort: 'München',
-        geburtsDatum: '2011-08-27 00:00:00',
-        stufe: 'Pfadfinder',
-        beitragsartId: 4,
-        plz: '80331'
-      },
-      responseType: null,
-      message: null,
-      title: null
-    });
-  }
-);
+  app.get(
+    path +
+      'zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/' +
+      member.member.id +
+      '*',
+    (req, res) => {
+      res.send({
+        success: true,
+        data: member.taetigkeiten,
+        responseType: 'OK',
+        totalEntries: member.taetigkeiten.length,
+        metaData: {
+          totalProperty: 'totalEntries',
+          root: 'data',
+          id: 'id',
+          fields: [
+            {
+              name: 'id',
+              header: null,
+              hidden: false,
+              width: 80
+            },
+            {
+              name: 'descriptor',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_untergliederung',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_taetigkeit',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_beitragsArt',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_aktivVon',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_caeaGroup',
+              header: null,
+              hidden: true,
+              flex: 3
+            },
+            {
+              name: 'entries_aktivBis',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_caeaGroupForGf',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_gruppierung',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_mitglied',
+              header: null,
+              hidden: false,
+              flex: 3
+            },
+            {
+              name: 'entries_anlagedatum',
+              header: null,
+              hidden: false,
+              flex: 3
+            }
+          ]
+        }
+      });
+    }
+  );
+});
 
 // All Members
 app.get(
@@ -202,28 +201,14 @@ app.get(
   (req, res) => {
     res.send({
       success: true,
-      data: [
-        {
-          descriptor: 'Smith, Liam',
-          name: '',
-          representedClass: 'de.iconcept.nami.entity.mitglied.Mitglied',
-          id: 1
-        },
-        {
-          descriptor: 'Johnson, Emma',
-          name: '',
-          representedClass: 'de.iconcept.nami.entity.mitglied.Mitglied',
-          id: 2
-        },
-        {
-          descriptor: 'Davis, Noah',
-          name: '',
-          representedClass: 'de.iconcept.nami.entity.mitglied.Mitglied',
-          id: 3
-        }
-      ],
+      data: memberData.map((member) => ({
+        descriptor: member.member.nachname + ', ' + member.member.vorname,
+        name: '',
+        representedClass: 'de.iconcept.nami.entity.mitglied.Mitglied',
+        id: member.member.id
+      })),
       responseType: 'OK',
-      totalEntries: 3,
+      totalEntries: memberData.length,
       metaData: {
         totalProperty: 'totalEntries',
         root: 'data',
@@ -243,384 +228,6 @@ app.get(
           },
           {
             name: 'name',
-            header: null,
-            hidden: false,
-            flex: 3
-          }
-        ]
-      }
-    });
-  }
-);
-
-// Tätigkeiten Mitglied 1
-app.get(
-  path +
-    'zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/1*',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [
-        {
-          entries_aktivBis: '',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2022-10-07 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2022-11-14 10:02:39',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Pfadfinder',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 11,
-          entries_mitglied: 'Smith, L. Mitglied: 1'
-        },
-        {
-          entries_aktivBis: '2022-10-06 00:00:00',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2020-10-02 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2020-10-30 10:39:46',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Jungpfadfinder',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 12,
-          entries_mitglied: 'Smith, L. Mitglied: 1'
-        },
-        {
-          entries_aktivBis: '2020-10-01 00:00:00',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2016-11-18 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2016-12-04 16:42:58',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Wölfling',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 13,
-          entries_mitglied: 'Smith, L. Mitglied: 1'
-        }
-      ],
-      responseType: 'OK',
-      totalEntries: 3,
-      metaData: {
-        totalProperty: 'totalEntries',
-        root: 'data',
-        id: 'id',
-        fields: [
-          {
-            name: 'id',
-            header: null,
-            hidden: false,
-            width: 80
-          },
-          {
-            name: 'descriptor',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_untergliederung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_taetigkeit',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_beitragsArt',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivVon',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroup',
-            header: null,
-            hidden: true,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivBis',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroupForGf',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_gruppierung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_mitglied',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_anlagedatum',
-            header: null,
-            hidden: false,
-            flex: 3
-          }
-        ]
-      }
-    });
-  }
-);
-
-// Tätigkeiten Mitglied 2
-app.get(
-  path +
-    'zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/2*',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [
-        {
-          entries_aktivBis: '',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2022-10-07 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2022-11-14 10:02:39',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Jungpfadfinder',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 11,
-          entries_mitglied: 'Johnson, E. Mitglied: 2'
-        },
-        {
-          entries_aktivBis: '2022-10-06 00:00:00',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2020-10-02 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2020-10-30 10:39:46',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Wölfling',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 12,
-          entries_mitglied: 'Johnson, E. Mitglied: 2'
-        }
-      ],
-      responseType: 'OK',
-      totalEntries: 2,
-      metaData: {
-        totalProperty: 'totalEntries',
-        root: 'data',
-        id: 'id',
-        fields: [
-          {
-            name: 'id',
-            header: null,
-            hidden: false,
-            width: 80
-          },
-          {
-            name: 'descriptor',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_untergliederung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_taetigkeit',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_beitragsArt',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivVon',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroup',
-            header: null,
-            hidden: true,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivBis',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroupForGf',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_gruppierung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_mitglied',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_anlagedatum',
-            header: null,
-            hidden: false,
-            flex: 3
-          }
-        ]
-      }
-    });
-  }
-);
-
-// Tätigkeiten Mitglied 3
-app.get(
-  path +
-    'zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/3*',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [
-        {
-          entries_aktivBis: '2022-10-06 00:00:00',
-          entries_beitragsArt: '',
-          entries_caeaGroup: '',
-          entries_aktivVon: '2020-10-02 00:00:00',
-          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          representedClass:
-            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
-          entries_anlagedatum: '2020-10-30 10:39:46',
-          entries_caeaGroupForGf: '',
-          entries_untergliederung: 'Wölfling',
-          entries_taetigkeit: '€ Mitglied (1)',
-          entries_gruppierung: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          id: 12,
-          entries_mitglied: 'Davis, N. Mitglied: 3'
-        }
-      ],
-      responseType: 'OK',
-      totalEntries: 1,
-      metaData: {
-        totalProperty: 'totalEntries',
-        root: 'data',
-        id: 'id',
-        fields: [
-          {
-            name: 'id',
-            header: null,
-            hidden: false,
-            width: 80
-          },
-          {
-            name: 'descriptor',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_untergliederung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_taetigkeit',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_beitragsArt',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivVon',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroup',
-            header: null,
-            hidden: true,
-            flex: 3
-          },
-          {
-            name: 'entries_aktivBis',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_caeaGroupForGf',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_gruppierung',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_mitglied',
-            header: null,
-            hidden: false,
-            flex: 3
-          },
-          {
-            name: 'entries_anlagedatum',
             header: null,
             hidden: false,
             flex: 3

@@ -31,3 +31,7 @@ Body (x-www-form-urlencoded):
 2. GET [Url][Path]/zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/:memberId/flist
 2. GET [Url][Path]/gruppierungen/filtered-for-navigation/gruppierung/node/1
 2. GET [Url]/ica/rest/dashboard/stats/stats
+
+## Data
+
+All member data is stored in the memberData.json. Feel free to contribute and add more data via merge request.

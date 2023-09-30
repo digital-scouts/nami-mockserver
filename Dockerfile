@@ -12,7 +12,7 @@ COPY index.js .
 RUN npm install
 
 # Exponiere den Port, auf dem der Node.js-Server läuft
-EXPOSE 8080
+EXPOSE 3000
 
 # Starte den Node.js-Server
 CMD [ "node", "index.js" ]
