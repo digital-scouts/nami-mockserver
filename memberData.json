@@ -4,7 +4,6 @@
       "geschlecht": "männlich",
       "emailVertretungsberechtigter": "liam.papa@smith.de",
       "lastUpdated": "2022-11-14 10:02:39",
-      "id": 1,
       "version": 34,
       "landId": 1,
       "mglTypeId": "MITGLIED",
@@ -17,7 +16,6 @@
       "telefon2": "Papa: 0171 321 321 / Mama: 01578 123 123",
       "strasse": "Musterweg 1",
       "vorname": "Liam",
-      "mitgliedsNummer": 1,
       "austrittsDatum": "",
       "ort": "Hamburg",
       "geburtsDatum": "2009-02-16 00:00:00",
@@ -28,48 +26,30 @@
     "taetigkeiten": [
       {
         "entries_aktivBis": "",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2022-10-07 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2022-11-14 10:02:39",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Pfadfinder",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 11,
-        "entries_mitglied": "Smith, L. Mitglied: 1"
+        "entries_taetigkeit": "€ Mitglied (1)"
       },
       {
         "entries_aktivBis": "2022-10-06 00:00:00",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2020-10-02 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2020-10-30 10:39:46",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Jungpfadfinder",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 12,
-        "entries_mitglied": "Smith, L. Mitglied: 1"
+        "entries_taetigkeit": "€ Mitglied (1)"
       },
       {
         "entries_aktivBis": "2020-10-01 00:00:00",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2016-11-18 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2016-12-04 16:42:58",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Wölfling",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 13,
-        "entries_mitglied": "Smith, L. Mitglied: 1"
+        "entries_taetigkeit": "€ Mitglied (1)"
       }
     ]
   },
@@ -78,7 +58,6 @@
       "geschlecht": "weiblich",
       "emailVertretungsberechtigter": "emma.mama@johnson.de",
       "lastUpdated": "2022-10-25 09:45:21",
-      "id": 2,
       "version": 29,
       "landId": 1,
       "mglTypeId": "MITGLIED",
@@ -91,7 +70,6 @@
       "telefon2": "Mama: 0162 987 987 / Papa: 0176 543 543",
       "strasse": "Musterstraße 2",
       "vorname": "Emma",
-      "mitgliedsNummer": 2,
       "austrittsDatum": "",
       "ort": "Berlin",
       "geburtsDatum": "2010-05-03 00:00:00",
@@ -102,33 +80,21 @@
     "taetigkeiten": [
       {
         "entries_aktivBis": "",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2022-10-07 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2022-11-14 10:02:39",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Jungpfadfinder",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 11,
-        "entries_mitglied": "Johnson, E. Mitglied: 2"
+        "entries_taetigkeit": "€ Mitglied (1)"
       },
       {
         "entries_aktivBis": "2022-10-06 00:00:00",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2020-10-02 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2020-10-30 10:39:46",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Wölfling",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 12,
-        "entries_mitglied": "Johnson, E. Mitglied: 2"
+        "entries_taetigkeit": "€ Mitglied (1)"
       }
     ]
   },
@@ -137,7 +103,6 @@
       "geschlecht": "männlich",
       "emailVertretungsberechtigter": "noah.papa@davis.de",
       "lastUpdated": "2022-09-30 14:20:17",
-      "id": 3,
       "version": 31,
       "landId": 1,
       "mglTypeId": "MITGLIED",
@@ -150,7 +115,6 @@
       "telefon2": "0159 987 789",
       "strasse": "Musterweg 3",
       "vorname": "Noah",
-      "mitgliedsNummer": 3,
       "austrittsDatum": "",
       "ort": "München",
       "geburtsDatum": "2011-08-27 00:00:00",
@@ -161,18 +125,12 @@
     "taetigkeiten": [
       {
         "entries_aktivBis": "2022-10-06 00:00:00",
-        "entries_beitragsArt": "",
         "entries_caeaGroup": "",
         "entries_aktivVon": "2020-10-02 00:00:00",
-        "descriptor": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
-        "representedClass": "de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment",
         "entries_anlagedatum": "2020-10-30 10:39:46",
         "entries_caeaGroupForGf": "",
         "entries_untergliederung": "Wölfling",
-        "entries_taetigkeit": "€ Mitglied (1)",
-        "entries_gruppierung": "Hamburg-Eidelstedt, Stamm Mock 333",
-        "id": 12,
-        "entries_mitglied": "Davis, N. Mitglied: 3"
+        "entries_taetigkeit": "€ Mitglied (1)"
       }
     ]
   }

@@ -1,0 +1,22 @@
+{
+  "gruppierungNameForMembers": "Hamburg-Eidelstedt, Stamm Mock 333",
+  "gruppierungen": {
+    "1": [
+      {
+        "descriptor": "Diözesanverband Mock 22",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.org.Gruppierung",
+        "id": 22
+      }
+    ],
+    "22": [
+      {
+        "descriptor": "Hamburg-Eidelstedt, Stamm Mock 333",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.org.Gruppierung",
+        "id": 333
+      }
+    ],
+    "333": []
+  }
+}

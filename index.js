@@ -5,6 +5,7 @@ import { createProxyMiddleware } from 'http-proxy-middleware';
 import morgan from 'morgan';
 import fetch from 'node-fetch';
 import memberData from './memberData.json' assert { type: 'json' };
+import mockData from './mockData.json' assert { type: 'json' };
 
 function extractJSessionID(cookieString) {
   // Definiere den regulären Ausdruck, um den Wert von JSESSIONID zu extrahieren
@@ -83,16 +84,20 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-// Member data
-memberData.forEach((member) => {
+// Member details and member tätigkeiten from memberData
+memberData.forEach((member, memberIndex) => {
   app.get(
     path +
       'mitglied/filtered-for-navigation/gruppierung/gruppierung/*/' +
-      member.member.id,
+      (memberIndex + 1),
     (req, res) => {
       res.send({
         success: true,
-        data: member.member,
+        data: {
+          ...member.member,
+          id: memberIndex + 1,
+          mitgliedsNummer: memberIndex + 1
+        },
         responseType: null,
         message: null,
         title: null
@@ -103,12 +108,32 @@ memberData.forEach((member) => {
   app.get(
     path +
       'zugeordnete-taetigkeiten/filtered-for-navigation/gruppierung-mitglied/mitglied/' +
-      member.member.id +
+      (memberIndex + 1) +
       '*',
     (req, res) => {
       res.send({
         success: true,
-        data: member.taetigkeiten,
+        data: member.taetigkeiten.map((taetigkeit, index) => ({
+          entries_aktivBis: taetigkeit.entries_aktivBis,
+          entries_beitragsArt: '',
+          entries_caeaGroup: taetigkeit.entries_caeaGroup,
+          entries_aktivVon: taetigkeit.entries_aktivVon,
+          descriptor: 'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
+          representedClass:
+            'de.iconcept.nami.entity.zuordnung.TaetigkeitAssignment',
+          entries_anlagedatum: taetigkeit.entries_anlagedatum,
+          entries_caeaGroupForGf: taetigkeit.entries_caeaGroupForGf,
+          entries_untergliederung: taetigkeit.entries_untergliederung,
+          entries_taetigkeit: taetigkeit.entries_taetigkeit,
+          entries_gruppierung: mockData.gruppierungNameForMembers,
+          id: member.member.id + '000' + index,
+          entries_mitglied:
+            member.member.nachname +
+            ', ' +
+            member.member.vorname.substring(0, 1) +
+            ' Mitglied: ' +
+            member.member.id
+        })),
         responseType: 'OK',
         totalEntries: member.taetigkeiten.length,
         metaData: {
@@ -195,7 +220,7 @@ memberData.forEach((member) => {
   );
 });
 
-// All Members
+// All Members from memberData
 app.get(
   path + 'mitglied/filtered-for-navigation/gruppierung/gruppierung/*',
   (req, res) => {
@@ -273,55 +298,22 @@ app.get('/ica/rest/dashboard/stats/stats', (req, res) => {
   });
 });
 
-// Gruppierung 1
-app.get(
-  path + 'gruppierungen/filtered-for-navigation/gruppierung/node/1',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [
-        {
-          descriptor: 'Diözesanverband Mock 22',
-          name: '',
-          representedClass: 'de.iconcept.nami.entity.org.Gruppierung',
-          id: 22
-        }
-      ],
-      responseType: 'OK'
-    });
-  }
-);
-
-// Gruppierung 2
-app.get(
-  path + 'gruppierungen/filtered-for-navigation/gruppierung/node/22',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [
-        {
-          descriptor: 'Hamburg-Eidelstedt, Stamm Mock 333',
-          name: '',
-          representedClass: 'de.iconcept.nami.entity.org.Gruppierung',
-          id: 333
-        }
-      ],
-      responseType: 'OK'
-    });
-  }
-);
-
-// Gruppierung 3
-app.get(
-  path + 'gruppierungen/filtered-for-navigation/gruppierung/node/333',
-  (req, res) => {
-    res.send({
-      success: true,
-      data: [],
-      responseType: 'OK'
-    });
-  }
-);
+// Gruppierungen from mockData
+const gruppierungen = Object.entries(mockData.gruppierungen);
+gruppierungen.forEach(([gruppierungId, gruppierung]) => {
+  app.get(
+    path +
+      'gruppierungen/filtered-for-navigation/gruppierung/node/' +
+      gruppierungId,
+    (req, res) => {
+      res.send({
+        success: true,
+        data: gruppierung,
+        responseType: 'OK'
+      });
+    }
+  );
+});
 
 // sessionStartup
 app.post(path + 'auth/manual/sessionStartup', async (req, res) => {
