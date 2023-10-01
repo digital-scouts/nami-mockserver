@@ -1,6 +1,14 @@
 {
   "gruppierungNameForMembers": "Hamburg-Eidelstedt, Stamm Mock 333",
   "gruppierungen": {
+    "root": [
+      {
+        "descriptor": "DPSG Bundesverband 000000",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.org.Gruppierung",
+        "id": 1
+      }
+    ],
     "1": [
       {
         "descriptor": "Diözesanverband Mock 22",
