@@ -130,5 +130,41 @@
         "entries_taetigkeit": "€ Mitglied (1)"
       }
     ]
+  },
+  {
+    "member": {
+      "geschlecht": "männlich",
+      "emailVertretungsberechtigter": "",
+      "lastUpdated": "2022-09-30 14:20:17",
+      "version": 5,
+      "mglTypeId": "MITGLIED",
+      "nachname": "Mustermann",
+      "eintrittsdatum": "2017-03-10 00:00:00",
+      "status": "Aktiv",
+      "telefon3": "",
+      "email": "leiter@stamm.de",
+      "telefon1": "0170 789 123",
+      "telefon2": "",
+      "strasse": "Musterweg 3",
+      "vorname": "Test",
+      "austrittsDatum": "",
+      "ort": "Hamburg",
+      "geburtsDatum": "2011-08-27 00:00:00",
+      "stufe": "Pfadfinder",
+      "beitragsartId": 4,
+      "plz": "80331",
+      "mitgliedsNummer": 1234
+    },
+    "taetigkeiten": [
+      {
+        "entries_aktivBis": "",
+        "entries_caeaGroup": "Schreiben/Lesen",
+        "entries_aktivVon": "2020-10-02 00:00:00",
+        "entries_anlagedatum": "2020-10-30 10:39:46",
+        "entries_caeaGroupForGf": "Schreiben/Lesen",
+        "entries_untergliederung": "Pfadfinder",
+        "entries_taetigkeit": "€ LeiterIn (6)"
+      }
+    ]
   }
 ]

@@ -94,9 +94,9 @@ memberData.forEach((member, memberIndex) => {
       res.send({
         success: true,
         data: {
-          ...member.member,
           id: memberIndex + 1,
           mitgliedsNummer: memberIndex + 1,
+          ...member.member,
 
           woelfling: null,
           jungpfadfinder: null,
