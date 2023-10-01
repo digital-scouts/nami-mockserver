@@ -162,7 +162,7 @@ memberData.forEach((member, memberIndex) => {
           entries_untergliederung: taetigkeit.entries_untergliederung,
           entries_taetigkeit: taetigkeit.entries_taetigkeit,
           entries_gruppierung: mockData.gruppierungNameForMembers,
-          id: memberIndex + 1 + '000' + taetigkeitIndex + 1,
+          id: (memberIndex + 1) * 10000 + (taetigkeitIndex + 1),
           entries_mitglied:
             member.member.nachname +
             ', ' +
