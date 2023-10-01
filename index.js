@@ -113,7 +113,7 @@ memberData.forEach((member, memberIndex) => {
     (req, res) => {
       res.send({
         success: true,
-        data: member.taetigkeiten.map((taetigkeit, index) => ({
+        data: member.taetigkeiten.map((taetigkeit, taetigkeitIndex) => ({
           entries_aktivBis: taetigkeit.entries_aktivBis,
           entries_beitragsArt: '',
           entries_caeaGroup: taetigkeit.entries_caeaGroup,
@@ -126,7 +126,7 @@ memberData.forEach((member, memberIndex) => {
           entries_untergliederung: taetigkeit.entries_untergliederung,
           entries_taetigkeit: taetigkeit.entries_taetigkeit,
           entries_gruppierung: mockData.gruppierungNameForMembers,
-          id: member.member.id + '000' + index,
+          id: member.member.id + '000' + taetigkeitIndex,
           entries_mitglied:
             member.member.nachname +
             ', ' +
@@ -226,11 +226,11 @@ app.get(
   (req, res) => {
     res.send({
       success: true,
-      data: memberData.map((member) => ({
+      data: memberData.map((member, index) => ({
         descriptor: member.member.nachname + ', ' + member.member.vorname,
         name: '',
         representedClass: 'de.iconcept.nami.entity.mitglied.Mitglied',
-        id: member.member.id
+        id: index + 1
       })),
       responseType: 'OK',
       totalEntries: memberData.length,
