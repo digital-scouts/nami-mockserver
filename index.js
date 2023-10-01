@@ -162,13 +162,14 @@ memberData.forEach((member, memberIndex) => {
           entries_untergliederung: taetigkeit.entries_untergliederung,
           entries_taetigkeit: taetigkeit.entries_taetigkeit,
           entries_gruppierung: mockData.gruppierungNameForMembers,
-          id: member.member.id + '000' + taetigkeitIndex,
+          id: memberIndex + 1 + '000' + taetigkeitIndex + 1,
           entries_mitglied:
             member.member.nachname +
             ', ' +
             member.member.vorname.substring(0, 1) +
             ' Mitglied: ' +
-            member.member.id
+            memberIndex +
+            1
         })),
         responseType: 'OK',
         totalEntries: member.taetigkeiten.length,
