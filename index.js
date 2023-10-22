@@ -26,14 +26,6 @@ const path = '/ica/rest/api/1/1/service/nami/';
 const app = express();
 const port = 3000;
 
-app.use(morgan('combined'));
-
-// Middleware zum Parsen von x-www-form-urlencoded Daten
-app.use(urlencoded({ extended: false }));
-
-// Middleware, um den Request-Body zu verarbeiten
-app.use(json());
-
 const proxy = createProxyMiddleware({
   target: 'https://nami.dpsg.de',
   changeOrigin: true,
@@ -52,25 +44,13 @@ const proxy = createProxyMiddleware({
     // Passe den Header an, bevor die Anfrage an die Ziel-URL gesendet wird
     proxyReq.setHeader('Host', 'nami.dpsg.de');
     proxyReq.setHeader('Origin', 'https://nami.dpsg.de');
-    proxyReq.setHeader('Content-Type', 'application/x-www-form-urlencoded');
   }
 });
 
-function isUserTestRequest(req) {
-  // Auth request always goes through
-  if (req.url.includes('auth/manual/sessionStartup')) {
-    return true;
-  } else if (req.headers.cookie?.toString().includes('testApiSessionToken')) {
-    console.log('Test user detected');
-    return true;
-  }
-  console.log('No test user detected');
-  return false;
-}
-
-app.use((req, res, next) => {
+app.use(async (req, res, next) => {
   console.log('Request:', req.url);
-  if (!isUserTestRequest(req)) {
+  if (!isUserTestRequest(req, res)) {
+    console.log('Proxying request');
     return proxy(req, res, next).catch((err) => {
       console.error('Fehler bei der Weiterleitung:', err);
       res.status(500).send('Interner Serverfehler');
@@ -79,6 +59,30 @@ app.use((req, res, next) => {
     next();
   }
 });
+
+app.use(morgan('combined'));
+
+// Middleware zum Parsen von x-www-form-urlencoded Daten
+app.use(urlencoded({ extended: false }));
+
+// Middleware, um den Request-Body zu verarbeiten
+app.use(json());
+
+function isUserTestRequest(req, res) {
+  // Auth request always goes through
+  if (req.url.includes('auth/manual/sessionStartup')) {
+    return true;
+  } else if (!req.headers.cookie) {
+    console.log('Kein Cookie');
+    res.status(400).send('no Cookie');
+    return true;
+  } else if (req.headers.cookie?.toString().includes('testApiSessionToken')) {
+    console.log('Test user detected');
+    return true;
+  }
+  console.log('No test user detected');
+  return false;
+}
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
