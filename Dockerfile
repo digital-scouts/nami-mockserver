@@ -9,5 +9,6 @@ RUN npm install
 COPY index.js .
 COPY memberData.json .
 COPY mockData.json .
+COPY mockMemberData.json .
 
 CMD [ "node", "index.js" ]
