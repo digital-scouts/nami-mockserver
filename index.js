@@ -6,6 +6,7 @@ import morgan from 'morgan';
 import fetch from 'node-fetch';
 import memberData from './memberData.json' assert { type: 'json' };
 import mockData from './mockData.json' assert { type: 'json' };
+import mockMetaData from './mockMetaData.json' assert { type: 'json' };
 
 function extractJSessionID(cookieString) {
   // Definiere den regulären Ausdruck, um den Wert von JSESSIONID zu extrahieren
@@ -337,6 +338,26 @@ app.get('/ica/rest/dashboard/stats/stats', (req, res) => {
     message: null,
     title: null
   });
+});
+
+// Meta
+app.get('/ica/rest/baseadmin/land/', (req, res) => {
+  res.send(mockMetaData.land);
+});
+app.get('/ica/rest/baseadmin/region/', (req, res) => {
+  res.send(mockMetaData.region);
+});
+app.get('/ica/rest/nami/enum/mgltype', (req, res) => {
+  res.send(mockMetaData.mgltype);
+});
+app.get('/ica/rest/baseadmin/staatsangehoerigkeit/', (req, res) => {
+  res.send(mockMetaData.staatsangehoerigkeit);
+});
+app.get('/ica/rest/baseadmin/geschlecht/', (req, res) => {
+  res.send(mockMetaData.geschlecht);
+});
+app.get('/ica/rest/namiBeitrag/beitragsartmgl/gruppierung/*/', (req, res) => {
+  res.send(mockMetaData.beitragsartmgl);
 });
 
 // Gruppierungen from mockData

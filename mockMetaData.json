@@ -1,0 +1,2101 @@
+{
+  "beitragsartmgl": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Familienermäßigt - Stiftungseuro - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 5
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Familienermäßigt - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 2
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Sozialermäßigt - Stiftungseuro - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 6
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Sozialermäßigt - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 3
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Übernahme - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 7
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Voller Beitrag - Stiftungseuro - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 4
+      },
+      {
+        "descriptor": "DPSG Bundesverband 000000 (Voller Beitrag - VERBANDSBEITRAG)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.beitrag.BeitragsArt",
+        "id": 1
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 7,
+    "metaData": {
+      "totalProperty": "totalEntries",
+      "root": "data",
+      "id": "id",
+      "fields": [
+        {
+          "name": "id",
+          "header": null,
+          "hidden": false,
+          "width": 80
+        },
+        {
+          "name": "descriptor",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        },
+        {
+          "name": "name",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        }
+      ]
+    }
+  },
+  "geschlecht": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "divers",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Geschlecht",
+        "id": 24
+      },
+      {
+        "descriptor": "keine Angabe",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Geschlecht",
+        "id": 23
+      },
+      {
+        "descriptor": "männlich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Geschlecht",
+        "id": 19
+      },
+      {
+        "descriptor": "weiblich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Geschlecht",
+        "id": 20
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 4,
+    "metaData": {
+      "totalProperty": "totalEntries",
+      "root": "data",
+      "id": "id",
+      "fields": [
+        {
+          "name": "id",
+          "header": null,
+          "hidden": false,
+          "width": 80
+        },
+        {
+          "name": "descriptor",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        },
+        {
+          "name": "name",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        }
+      ]
+    }
+  },
+  "staatsangehoerigkeit": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "Bosnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1284
+      },
+      {
+        "descriptor": "USA/SLO",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1286
+      },
+      {
+        "descriptor": "serb.montenegro",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1287
+      },
+      {
+        "descriptor": "serbisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1288
+      },
+      {
+        "descriptor": "französich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1289
+      },
+      {
+        "descriptor": "A",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1291
+      },
+      {
+        "descriptor": "holländisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1292
+      },
+      {
+        "descriptor": "Kenia",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1293
+      },
+      {
+        "descriptor": "madegaschi",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1294
+      },
+      {
+        "descriptor": "+ amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1295
+      },
+      {
+        "descriptor": "St. Lucianer",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1296
+      },
+      {
+        "descriptor": "lettisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1297
+      },
+      {
+        "descriptor": "Iran",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1298
+      },
+      {
+        "descriptor": "japanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1299
+      },
+      {
+        "descriptor": "österr. + südafr.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1304
+      },
+      {
+        "descriptor": "italiano",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1306
+      },
+      {
+        "descriptor": "Ukrainerin",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1308
+      },
+      {
+        "descriptor": "deutsch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1054
+      },
+      {
+        "descriptor": "Serbien-Montenegro",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1310
+      },
+      {
+        "descriptor": "Jugoslawisch/Kosovo",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1311
+      },
+      {
+        "descriptor": "",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1056
+      },
+      {
+        "descriptor": "ungarisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1312
+      },
+      {
+        "descriptor": "andere",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1057
+      },
+      {
+        "descriptor": "chinesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1058
+      },
+      {
+        "descriptor": "österreichisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1059
+      },
+      {
+        "descriptor": "Thailand",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1315
+      },
+      {
+        "descriptor": "italienisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1060
+      },
+      {
+        "descriptor": "EU",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1061
+      },
+      {
+        "descriptor": "maltesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1317
+      },
+      {
+        "descriptor": "Portugiesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1318
+      },
+      {
+        "descriptor": "niederländisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1064
+      },
+      {
+        "descriptor": "schweizerisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1320
+      },
+      {
+        "descriptor": "kenianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1065
+      },
+      {
+        "descriptor": "Tschechische Republick",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1321
+      },
+      {
+        "descriptor": "kroatisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1066
+      },
+      {
+        "descriptor": "brasilianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1067
+      },
+      {
+        "descriptor": "weißrussisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1323
+      },
+      {
+        "descriptor": "polnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1069
+      },
+      {
+        "descriptor": "Bolivien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1326
+      },
+      {
+        "descriptor": "türkisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1071
+      },
+      {
+        "descriptor": "österr.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1327
+      },
+      {
+        "descriptor": "Grieche",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1329
+      },
+      {
+        "descriptor": "portugiesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1074
+      },
+      {
+        "descriptor": "Burundi",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1331
+      },
+      {
+        "descriptor": "amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1076
+      },
+      {
+        "descriptor": "Brittisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1333
+      },
+      {
+        "descriptor": "österreich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1081
+      },
+      {
+        "descriptor": "Albanien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1338
+      },
+      {
+        "descriptor": "Nigeria",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1339
+      },
+      {
+        "descriptor": "GB",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1340
+      },
+      {
+        "descriptor": "mazedonisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1341
+      },
+      {
+        "descriptor": "britisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1086
+      },
+      {
+        "descriptor": "Togolaise",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1343
+      },
+      {
+        "descriptor": "Schweizer",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1088
+      },
+      {
+        "descriptor": "pakistanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1344
+      },
+      {
+        "descriptor": "Thai",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1089
+      },
+      {
+        "descriptor": "österreichschich/norwegisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1345
+      },
+      {
+        "descriptor": "litauisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1091
+      },
+      {
+        "descriptor": "Portugal",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1347
+      },
+      {
+        "descriptor": "griechisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1092
+      },
+      {
+        "descriptor": "Italienisch-Österr.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1348
+      },
+      {
+        "descriptor": "schweizerisch ",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1093
+      },
+      {
+        "descriptor": "guatemaltekisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1349
+      },
+      {
+        "descriptor": "belgisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1094
+      },
+      {
+        "descriptor": "nicht bekannt",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1350
+      },
+      {
+        "descriptor": "Portugiesich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1352
+      },
+      {
+        "descriptor": "lettisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1102
+      },
+      {
+        "descriptor": "französisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1103
+      },
+      {
+        "descriptor": "spanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1104
+      },
+      {
+        "descriptor": "british",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1360
+      },
+      {
+        "descriptor": "marokkanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1361
+      },
+      {
+        "descriptor": "Togo",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1106
+      },
+      {
+        "descriptor": "albanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1107
+      },
+      {
+        "descriptor": "Niederländer",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1364
+      },
+      {
+        "descriptor": "Sri Lanka",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1110
+      },
+      {
+        "descriptor": "estnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1366
+      },
+      {
+        "descriptor": "Indien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1111
+      },
+      {
+        "descriptor": "Eritrea",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1112
+      },
+      {
+        "descriptor": "slowakisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1370
+      },
+      {
+        "descriptor": "Serbe",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1115
+      },
+      {
+        "descriptor": "Algerisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1372
+      },
+      {
+        "descriptor": "indonesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1117
+      },
+      {
+        "descriptor": "griech.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1373
+      },
+      {
+        "descriptor": "yugoslawisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1118
+      },
+      {
+        "descriptor": "englisch/plonisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1119
+      },
+      {
+        "descriptor": "irisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1375
+      },
+      {
+        "descriptor": "bosnisch-herzegow.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1120
+      },
+      {
+        "descriptor": "Jugoslawisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1376
+      },
+      {
+        "descriptor": "Italienisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1121
+      },
+      {
+        "descriptor": "Irisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1122
+      },
+      {
+        "descriptor": "libanesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1123
+      },
+      {
+        "descriptor": "iranisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1124
+      },
+      {
+        "descriptor": "Bulgarien/Belgien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1380
+      },
+      {
+        "descriptor": "polnisch/italiensch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1381
+      },
+      {
+        "descriptor": "amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1126
+      },
+      {
+        "descriptor": "salvadorianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1127
+      },
+      {
+        "descriptor": "Russische Föderation",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1384
+      },
+      {
+        "descriptor": "US",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1129
+      },
+      {
+        "descriptor": "Rumänisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1385
+      },
+      {
+        "descriptor": "Ungarn",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1130
+      },
+      {
+        "descriptor": "U.S. Amerikaner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1386
+      },
+      {
+        "descriptor": "SERBIEN",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1387
+      },
+      {
+        "descriptor": "Spanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1132
+      },
+      {
+        "descriptor": "ukrainisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1133
+      },
+      {
+        "descriptor": "Belgier",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1389
+      },
+      {
+        "descriptor": "eritreisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1134
+      },
+      {
+        "descriptor": "philippinisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1135
+      },
+      {
+        "descriptor": "Ghana",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1391
+      },
+      {
+        "descriptor": "jugoslawisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1137
+      },
+      {
+        "descriptor": "Amerikaner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1393
+      },
+      {
+        "descriptor": "tschechisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1138
+      },
+      {
+        "descriptor": "kongolesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1394
+      },
+      {
+        "descriptor": "portugisiesch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1395
+      },
+      {
+        "descriptor": "Bosnien und Herzegowina",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1140
+      },
+      {
+        "descriptor": "Portugisiesch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1396
+      },
+      {
+        "descriptor": "Türkisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1141
+      },
+      {
+        "descriptor": "nigerianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1397
+      },
+      {
+        "descriptor": "bosnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1142
+      },
+      {
+        "descriptor": "Indonesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1398
+      },
+      {
+        "descriptor": "British",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1143
+      },
+      {
+        "descriptor": "griechisch-amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1399
+      },
+      {
+        "descriptor": "portugisisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1144
+      },
+      {
+        "descriptor": "CH",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1146
+      },
+      {
+        "descriptor": "Malaysian",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1405
+      },
+      {
+        "descriptor": "Filipina",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1150
+      },
+      {
+        "descriptor": "vietnam",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1151
+      },
+      {
+        "descriptor": "Kroatien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1152
+      },
+      {
+        "descriptor": "venezuelanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1408
+      },
+      {
+        "descriptor": "Brasilien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1410
+      },
+      {
+        "descriptor": "niederländer",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1155
+      },
+      {
+        "descriptor": "U.S.Amerikaner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1411
+      },
+      {
+        "descriptor": "vietnamesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1156
+      },
+      {
+        "descriptor": "ECU",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1412
+      },
+      {
+        "descriptor": "Luxemburgisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1413
+      },
+      {
+        "descriptor": "Britisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1158
+      },
+      {
+        "descriptor": "Österreich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1159
+      },
+      {
+        "descriptor": "amerikanisch / polnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1415
+      },
+      {
+        "descriptor": "kanadisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1160
+      },
+      {
+        "descriptor": "schweiz",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1416
+      },
+      {
+        "descriptor": "Thailänder",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1417
+      },
+      {
+        "descriptor": "Irakisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1162
+      },
+      {
+        "descriptor": "Peru",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1418
+      },
+      {
+        "descriptor": "Italien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1163
+      },
+      {
+        "descriptor": "Kirgystan",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1164
+      },
+      {
+        "descriptor": "australisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1420
+      },
+      {
+        "descriptor": "GB (EU) / USA",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1421
+      },
+      {
+        "descriptor": "Tschad",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1166
+      },
+      {
+        "descriptor": "bolivisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1422
+      },
+      {
+        "descriptor": "Bosnien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1167
+      },
+      {
+        "descriptor": "ital./portug.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1168
+      },
+      {
+        "descriptor": "frz",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1426
+      },
+      {
+        "descriptor": "Portugisisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1427
+      },
+      {
+        "descriptor": "croatisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1173
+      },
+      {
+        "descriptor": "Haiti",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1429
+      },
+      {
+        "descriptor": "Kroatisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1174
+      },
+      {
+        "descriptor": "Belgisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1175
+      },
+      {
+        "descriptor": "russisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1176
+      },
+      {
+        "descriptor": "Mexikaner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1432
+      },
+      {
+        "descriptor": "Kongolese",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1433
+      },
+      {
+        "descriptor": "irakisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1179
+      },
+      {
+        "descriptor": "mexikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1435
+      },
+      {
+        "descriptor": "Französisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1180
+      },
+      {
+        "descriptor": "brasilianische",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1436
+      },
+      {
+        "descriptor": "Kanadisch / Niederländisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1437
+      },
+      {
+        "descriptor": "rumänisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1182
+      },
+      {
+        "descriptor": "moldawisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1183
+      },
+      {
+        "descriptor": "US-Amerikaner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1439
+      },
+      {
+        "descriptor": "Albanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1184
+      },
+      {
+        "descriptor": "niederländiscch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1440
+      },
+      {
+        "descriptor": "Neiderländisch / Englisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1185
+      },
+      {
+        "descriptor": "Ägypten",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1441
+      },
+      {
+        "descriptor": "jugosl.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1186
+      },
+      {
+        "descriptor": "und spanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1442
+      },
+      {
+        "descriptor": "bolivianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1187
+      },
+      {
+        "descriptor": "Amerikanerin",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1443
+      },
+      {
+        "descriptor": "+italienisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1444
+      },
+      {
+        "descriptor": "Brasilien / Österreich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1446
+      },
+      {
+        "descriptor": "chilenisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1191
+      },
+      {
+        "descriptor": "Polen",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1447
+      },
+      {
+        "descriptor": "Serbisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1192
+      },
+      {
+        "descriptor": "kazachstan",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1193
+      },
+      {
+        "descriptor": "US-amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1194
+      },
+      {
+        "descriptor": "Kongo",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1450
+      },
+      {
+        "descriptor": "thailändisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1451
+      },
+      {
+        "descriptor": "Amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1196
+      },
+      {
+        "descriptor": "und australisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1452
+      },
+      {
+        "descriptor": "togoisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1453
+      },
+      {
+        "descriptor": "Slowenien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1199
+      },
+      {
+        "descriptor": "Kurdisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1455
+      },
+      {
+        "descriptor": "Russisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1200
+      },
+      {
+        "descriptor": "Philippiner",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1456
+      },
+      {
+        "descriptor": "tschetschenisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1457
+      },
+      {
+        "descriptor": "Mosambik",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1458
+      },
+      {
+        "descriptor": "Schweiz",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1203
+      },
+      {
+        "descriptor": "Guatemala",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1459
+      },
+      {
+        "descriptor": "Brasilianisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1460
+      },
+      {
+        "descriptor": "Kroate",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1205
+      },
+      {
+        "descriptor": "Äthopien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1461
+      },
+      {
+        "descriptor": "usbekisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1462
+      },
+      {
+        "descriptor": "Indisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1463
+      },
+      {
+        "descriptor": "USA / GB(EU)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1465
+      },
+      {
+        "descriptor": "vietnamesich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1210
+      },
+      {
+        "descriptor": "Britsch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1466
+      },
+      {
+        "descriptor": "syrisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1211
+      },
+      {
+        "descriptor": "Japanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1467
+      },
+      {
+        "descriptor": "Tai",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1468
+      },
+      {
+        "descriptor": "Türkei",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1213
+      },
+      {
+        "descriptor": "F",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1214
+      },
+      {
+        "descriptor": "Ukraine",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1215
+      },
+      {
+        "descriptor": "Weißrussland",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1471
+      },
+      {
+        "descriptor": "slowenisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1216
+      },
+      {
+        "descriptor": "Äthiopisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1472
+      },
+      {
+        "descriptor": "luxemburgisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1218
+      },
+      {
+        "descriptor": "Rumänien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1219
+      },
+      {
+        "descriptor": "+ Spanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1475
+      },
+      {
+        "descriptor": "Serbien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1220
+      },
+      {
+        "descriptor": "Kenianer",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1476
+      },
+      {
+        "descriptor": "Griechisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1221
+      },
+      {
+        "descriptor": "kroatische",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1477
+      },
+      {
+        "descriptor": "kosovarisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1222
+      },
+      {
+        "descriptor": "Litauisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1479
+      },
+      {
+        "descriptor": "kasachisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1225
+      },
+      {
+        "descriptor": "Südkorea",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1481
+      },
+      {
+        "descriptor": "tunesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1482
+      },
+      {
+        "descriptor": "kamerunesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1229
+      },
+      {
+        "descriptor": "philipino",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1233
+      },
+      {
+        "descriptor": "phillipino",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1234
+      },
+      {
+        "descriptor": "port.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1235
+      },
+      {
+        "descriptor": "luxemb.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1236
+      },
+      {
+        "descriptor": "N-amerikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1237
+      },
+      {
+        "descriptor": "F - CH",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1238
+      },
+      {
+        "descriptor": "NL",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1239
+      },
+      {
+        "descriptor": "theiländisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1243
+      },
+      {
+        "descriptor": "Vietnam",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1246
+      },
+      {
+        "descriptor": "Bulgarien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1247
+      },
+      {
+        "descriptor": "bulgarisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1250
+      },
+      {
+        "descriptor": "norwegisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1251
+      },
+      {
+        "descriptor": "rwander",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1252
+      },
+      {
+        "descriptor": "ägypt.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1254
+      },
+      {
+        "descriptor": "B",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1255
+      },
+      {
+        "descriptor": "dänisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1259
+      },
+      {
+        "descriptor": "türk.",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1261
+      },
+      {
+        "descriptor": "Syrisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1262
+      },
+      {
+        "descriptor": "domenikanisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1263
+      },
+      {
+        "descriptor": "tamilisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1265
+      },
+      {
+        "descriptor": "äthiopisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1266
+      },
+      {
+        "descriptor": "pl",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1268
+      },
+      {
+        "descriptor": "griechisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1269
+      },
+      {
+        "descriptor": "Togolesisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1271
+      },
+      {
+        "descriptor": "kamerunisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1272
+      },
+      {
+        "descriptor": "Polnisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1273
+      },
+      {
+        "descriptor": "persisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1276
+      },
+      {
+        "descriptor": "Irak",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1277
+      },
+      {
+        "descriptor": "Ukrainisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1278
+      },
+      {
+        "descriptor": "Tschechisch",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Staatsangehoerigkeit",
+        "id": 1279
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 255,
+    "metaData": {
+      "totalProperty": "totalEntries",
+      "root": "data",
+      "id": "id",
+      "fields": [
+        {
+          "name": "id",
+          "header": null,
+          "hidden": false,
+          "width": 80
+        },
+        {
+          "name": "descriptor",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        },
+        {
+          "name": "name",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        }
+      ]
+    }
+  },
+  "mgltype": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "Nicht-Mitglied",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.mitglied.MglType",
+        "id": "NICHT_MITGLIED"
+      },
+      {
+        "descriptor": "Schnuppermitglied",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.mitglied.MglType",
+        "id": "SCHNUPPER_MITGLIED"
+      },
+      {
+        "descriptor": "Mitglied",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.mitglied.MglType",
+        "id": "MITGLIED"
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 3
+  },
+  "region": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "Baden-Württemberg (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 1
+      },
+      {
+        "descriptor": "Bayern (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 2
+      },
+      {
+        "descriptor": "Berlin (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 3
+      },
+      {
+        "descriptor": "Brandenburg (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 4
+      },
+      {
+        "descriptor": "Bremen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 5
+      },
+      {
+        "descriptor": "Hamburg (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 6
+      },
+      {
+        "descriptor": "Hessen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 7
+      },
+      {
+        "descriptor": "Mecklenburg-Vorpommern (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 8
+      },
+      {
+        "descriptor": "Niedersachsen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 9
+      },
+      {
+        "descriptor": "Nordrhein-Westfalen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 10
+      },
+      {
+        "descriptor": "Rheinland-Pfalz (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 11
+      },
+      {
+        "descriptor": "Saarland (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 12
+      },
+      {
+        "descriptor": "Sachsen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 13
+      },
+      {
+        "descriptor": "Sachsen Anhalt (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 14
+      },
+      {
+        "descriptor": "Schleswig-Holstein (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 15
+      },
+      {
+        "descriptor": "Thüringen (Deutschland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 16
+      },
+      {
+        "descriptor": "Nicht-DE (Ausland)",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Region",
+        "id": 23
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 17,
+    "metaData": {
+      "totalProperty": "totalEntries",
+      "root": "data",
+      "id": "id",
+      "fields": [
+        {
+          "name": "id",
+          "header": null,
+          "hidden": false,
+          "width": 80
+        },
+        {
+          "name": "descriptor",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        },
+        {
+          "name": "name",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        }
+      ]
+    }
+  },
+  "land": {
+    "success": true,
+    "data": [
+      {
+        "descriptor": "Deutschland",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 1
+      },
+      {
+        "descriptor": "Algerien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 2
+      },
+      {
+        "descriptor": "Belgien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 3
+      },
+      {
+        "descriptor": "Brasilien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 4
+      },
+      {
+        "descriptor": "Dänemark",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 5
+      },
+      {
+        "descriptor": "Finnland",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 6
+      },
+      {
+        "descriptor": "Frankreich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 7
+      },
+      {
+        "descriptor": "Grossbritanien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 8
+      },
+      {
+        "descriptor": "Irland",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 9
+      },
+      {
+        "descriptor": "Island",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 10
+      },
+      {
+        "descriptor": "Israel",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 11
+      },
+      {
+        "descriptor": "Italien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 12
+      },
+      {
+        "descriptor": "Japan",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 13
+      },
+      {
+        "descriptor": "Kanada",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 14
+      },
+      {
+        "descriptor": "Litauen",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 15
+      },
+      {
+        "descriptor": "Luxemburg",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 16
+      },
+      {
+        "descriptor": "Niederlande",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 17
+      },
+      {
+        "descriptor": "Norwegen",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 18
+      },
+      {
+        "descriptor": "Österreich",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 19
+      },
+      {
+        "descriptor": "Polen",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 20
+      },
+      {
+        "descriptor": "Rumänien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 21
+      },
+      {
+        "descriptor": "Schweiz",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 22
+      },
+      {
+        "descriptor": "Schweden",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 23
+      },
+      {
+        "descriptor": "Slowenien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 24
+      },
+      {
+        "descriptor": "Spanien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 25
+      },
+      {
+        "descriptor": "Südafrika",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 26
+      },
+      {
+        "descriptor": "Thailand",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 27
+      },
+      {
+        "descriptor": "Ungarn",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 28
+      },
+      {
+        "descriptor": "Vatikanstadt",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 29
+      },
+      {
+        "descriptor": "USA",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 30
+      },
+      {
+        "descriptor": "Indien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 31
+      },
+      {
+        "descriptor": "Polen",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 32
+      },
+      {
+        "descriptor": "CV",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 33
+      },
+      {
+        "descriptor": "Ausland",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 34
+      },
+      {
+        "descriptor": "Malaysia",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 35
+      },
+      {
+        "descriptor": "Tunesien",
+        "name": "",
+        "representedClass": "de.iconcept.nami.entity.base.Land",
+        "id": 36
+      }
+    ],
+    "responseType": "OK",
+    "totalEntries": 36,
+    "metaData": {
+      "totalProperty": "totalEntries",
+      "root": "data",
+      "id": "id",
+      "fields": [
+        {
+          "name": "id",
+          "header": null,
+          "hidden": false,
+          "width": 80
+        },
+        {
+          "name": "descriptor",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        },
+        {
+          "name": "name",
+          "header": null,
+          "hidden": false,
+          "flex": 3
+        }
+      ]
+    }
+  }
+}
