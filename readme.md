@@ -1,3 +1,6 @@
+# discontinued & soon deprecated 
+
+
 # Mockserver für Nami
 
 Access the mockserver at <http://localhost:3000> with the sessionStartup endpoint and use 'test' as password and "1234" as username.
